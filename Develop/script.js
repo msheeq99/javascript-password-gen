@@ -44,10 +44,12 @@ function generatePassword() {
 
   let passwordSymbols = prompt("Would like to include symbol?")
   if (passwordSymbols === "yes") {
-    window.alert("Symbol added !")
+    window.alert("Symbols added !")
   }
 
-  if ()
+  if (passwordSymbols === "no") {
+    window.alert("Symbols dismissed !")
+  }
 }
 
 // Add event listener to generate button
