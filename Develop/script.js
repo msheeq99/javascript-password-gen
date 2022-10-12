@@ -41,6 +41,13 @@ function generatePassword() {
   if (passwordLowerCase === "no") {
     window.alert("Lowercase dismissed !")
   } 
+
+  let passwordSymbols = prompt("Would like to include symbol?")
+  if (passwordSymbols === "yes") {
+    window.alert("Symbol added !")
+  }
+
+  if ()
 }
 
 // Add event listener to generate button
