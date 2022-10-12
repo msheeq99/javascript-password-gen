@@ -1,3 +1,4 @@
+"use strict"
 // Assignment Code
 
 // lower, uppercase, numbers, symbols and password.
@@ -19,20 +20,24 @@ function writePassword() {
 // Generate password based on criteria.
 function generatePassword() {
   
-  let passwordLength = prompt ("Do you want the password to have a certain length? - Enter number between 8 - 128");
+  let passwordLength = prompt("Do you want the password to have a certain length? - Enter number between 8 - 128");
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) ;
-} 
 
-  let passwordUpperCase = prompt ("Would you like to include lowercase character?");
+
+  let passwordUpperCase = prompt("Would you like to include lowercase character?");
   if (passwordUpperCase === "yes") {
-    window.alert("Uppercase added");
+    window.confirm("Uppercase added");
   }
 
-  else(passwordUpperCase === "no") {
-    window.alert("Uppercase not added")
+  if (passwordUpperCase === "no") {
+    window.alert("Uppercase dismissed");
   }
 
-  
+  let
+
+ 
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
