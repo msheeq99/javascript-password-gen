@@ -24,16 +24,20 @@ function generatePassword() {
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) ;
 
 
-  let passwordUpperCase = prompt("Would you like to include lowercase character?");
+  let passwordUpperCase = prompt("Would you like to include uppercase character?");
   if (passwordUpperCase === "yes") {
-    window.confirm("Uppercase added");
+    window.alert("Uppercase added");
   }
 
   if (passwordUpperCase === "no") {
     window.alert("Uppercase dismissed");
   }
 
-  let
+  let passwordLowerCase = prompt("Would you like to include lowercase character?")
+  if (passwordLowerCase === "yes") {
+    window.alert("Lowercase added")
+  }
+
 
  
 }
