@@ -20,11 +20,15 @@ function writePassword() {
 function generatePassword() {
   
   let passwordLength = prompt ("Do you want the password to have a certain length? - Enter number between 8 - 128");
-  if (passwordLength < 8 || passwordLength > 128) {}
+  if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) ;
 } 
 
   let passwordUpperCase = prompt ("Would you like to include lowercase character?");
-  if ()
+  if (passwordUpperCase === "yes") {
+    window.alert("Uppercase character added");
+  }
+
+  else()
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
