@@ -26,20 +26,21 @@ function generatePassword() {
 
   let passwordUpperCase = prompt("Would you like to include uppercase character?");
   if (passwordUpperCase === "yes") {
-    window.alert("Uppercase added");
+    window.alert("Uppercase added !");
   }
 
   if (passwordUpperCase === "no") {
-    window.alert("Uppercase dismissed");
+    window.alert("Uppercase dismissed !");
   }
 
   let passwordLowerCase = prompt("Would you like to include lowercase character?")
   if (passwordLowerCase === "yes") {
-    window.alert("Lowercase added")
+    window.alert("Lowercase added !")
   }
 
-
- 
+  if (passwordLowerCase === "no") {
+    window.alert("Lowercase dismissed !")
+  } 
 }
 
 // Add event listener to generate button
