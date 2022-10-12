@@ -18,12 +18,13 @@ function writePassword() {
 }
 // Generate password based on criteria.
 function generatePassword() {
-  console.log("Hey, you clicked the button!")
-  let passwordLength = prompt ("Do you want the password to have a certain length? ")
+  
+  let passwordLength = prompt ("Do you want the password to have a certain length? - Enter number between 8 - 128");
+  if (passwordLength < 8 || passwordLength > 128) {}
 } 
 
-
-
+  let passwordUpperCase = prompt ("Would you like to include lowercase character?");
+  if ()
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
