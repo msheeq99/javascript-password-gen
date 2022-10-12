@@ -1,5 +1,5 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+const generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
   console.log("Hey, You clicked the button!");
@@ -8,6 +8,12 @@ function generatePassword() {
       
 
 //    a. Password length 8 < 128.
+  const length = document.querySelector("#length") 
+
+// 2. Validate the input.
+const incNumbers = document.querySelector("#numbers");
+const passwordText = document.querySelector("#specialCharacters");
+ 
 
 //    b. lowercase, uppercase, numbers, special characters.
   const lowercase = "abcdefghijklmnopqrstuvwxyz";
@@ -26,11 +32,11 @@ function generatePassword() {
 }
 
 // Write password to the #password input
-// 2. Validate the input.
+
 
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  const password = generatePassword();
+  const passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
