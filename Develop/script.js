@@ -47,6 +47,7 @@ function generatePassword() {
 
   let passwordSymbols = prompt("Would like to include symbol?")
   if (passwordSymbols === "yes") {
+    charsMixed = passwordSymbols.concat(passwordSymbols);
     window.alert("Symbols added !")
   }
 
@@ -55,8 +56,8 @@ function generatePassword() {
   }
 
   let passwordNumbers = prompt("Would like to include numbers?")
-  if (passwordSymbols === "yes") {
-    
+  if (passwordNumbers === "yes") {
+    charsMixed = passwordNumbers.concat(passwordNumbers);
     window.alert("Numbers added !")
   }
 
