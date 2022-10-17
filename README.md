@@ -14,3 +14,7 @@ Then I added the confirm method so it returns true if i click on ok otherwise it
 Then I made an empty array so that all my choices are concatted into one array with an if statement
 
 Lastly I declared a variable called results and looped over the choices with a FOR loop and used math random and math floor to give me random choices
+
+![javascript-password-gen screenshot](https://user-images.githubusercontent.com/113865888/196292018-63b5a677-ccfe-47a4-ad0a-aa88be78cf73.png)
+
+
