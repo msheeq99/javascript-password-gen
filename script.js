@@ -1,4 +1,3 @@
-"use strict"
 // Assignment Code
 
 // lower, uppercase, numbers, symbols and password.
