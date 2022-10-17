@@ -27,6 +27,7 @@ function generatePassword() {
 
   let passwordUpperCase = prompt("Would you like to include uppercase character?");
   if (passwordUpperCase === "yes") {
+    charsMixed = passwordUpperCase.concat(passwordUpperCase)
     window.alert("Uppercase added !");
   }
 
@@ -54,6 +55,7 @@ function generatePassword() {
 
   let passwordNumbers = prompt("Would like to include numbers?")
   if (passwordSymbols === "yes") {
+    
     window.alert("Numbers added !")
   }
 
@@ -70,7 +72,7 @@ var selectedCharsMixed = charsMixed[randomCharsMixed];
 password = password + selectedCharsMixed;
 
 }
-console.log(password)
+console.log(password);
 alert(password);
 
 
