@@ -14,7 +14,7 @@ let  charsMixed = [];
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  var passwordLength = numbers;
+  
 
   passwordText.value = password;
 }
@@ -52,6 +52,15 @@ function generatePassword() {
     window.alert("Symbols dismissed !")
   }
 
+  let passwordNumbers = prompt("Would like to include numbers?")
+  if (passwordSymbols === "yes") {
+    window.alert("Numbers added !")
+  }
+
+  if (passwordSymbols === "no") {
+    window.alert("Numbers dismissed !")
+  }
+
   
 let password = "";
 for (let i = 0; i <passwordLength; i++) {
@@ -62,7 +71,7 @@ password = password + selectedCharsMixed;
 
 }
 console.log(password)
-confirm(password);
+alert(password);
 
 
 return password;
