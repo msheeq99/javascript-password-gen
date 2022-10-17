@@ -55,6 +55,9 @@ function generatePassword() {
   
 let password = "";
 for (let i = 0; i <passwordLength; i++) {
+password + i + "";
+var randomCharsMixed = Math.floor(Math.random() * charsMixed.Length);
+var randomCharsMixed 
 
 }
 }
