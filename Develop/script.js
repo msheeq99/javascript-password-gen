@@ -50,6 +50,15 @@ function generatePassword() {
   if (passwordSymbols === "no") {
     window.alert("Symbols dismissed !")
   }
+
+  
+  var length = 8,
+  charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+  retVal = "";
+for (var i = 0, n = charset.length; i < length; ++i) {
+  retVal += charset.charAt(Math.floor(Math.random() * n));
+}
+return retVal;
 }
 
 // Add event listener to generate button
