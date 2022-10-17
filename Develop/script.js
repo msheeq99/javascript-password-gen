@@ -10,7 +10,7 @@ const upperCase = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 const password = ("");
 // Write password to the #password input
 // Validate the input.
-let  charsMixed = ();
+let  charsMixed = [];
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -57,9 +57,15 @@ let password = "";
 for (let i = 0; i <passwordLength; i++) {
 password + i + "";
 var randomCharsMixed = Math.floor(Math.random() * charsMixed.Length);
-var randomCharsMixed 
+var selectedCharsMixed = charsMixed[randomCharsMixed];
+password = password + selectedCharsMixed;
 
 }
+console.log(password)
+confirm(password);
+
+
+return password;
 }
 
 // Add event listener to generate button
