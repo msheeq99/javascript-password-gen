@@ -52,7 +52,21 @@ function generatePassword() {
     charSet = charSet.concat(charSymbols);
    }
 
-}
+   if (lowercase == false && uppercase == false && numbers == false && symbols ==false){
+    alert("You need to select atleast one option")
+   }
+
+   console.log(charSet)
+
+   var results = ""
+
+   for(let i = 0, n = charSet.length; i <parseInt(passwordLength); i++){
+    results += charSet[Math.floor(Math.random() *n)];
+   }
+   return results;
+
+  }
+
 
 
 // Add event listener to generate button
